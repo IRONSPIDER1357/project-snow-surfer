@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
         Vector2 moveVector;
         moveVector = moveAction.ReadValue<Vector2>();
 
+        //rotates the character left or right based on player's input
         if (moveVector.x < 0)
         {
             myRigidbody2d.AddTorque(torqueAmount);
